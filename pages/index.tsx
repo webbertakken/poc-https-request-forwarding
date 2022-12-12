@@ -1,18 +1,17 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <ul>
       <li>
-        <Link href="/a" as="/a">
-          a (local)
-        </Link>
+        <Link href="/about" as="/about">
+          About
+        </Link>{' '}
+        (local)
       </li>
       <li>
-        <Link href="/b" as="/b">
-          b (forward)
-        </Link>
+        <a href="/products/">Products</a> (forwarding).
       </li>
     </ul>
-  )
+  );
 }
