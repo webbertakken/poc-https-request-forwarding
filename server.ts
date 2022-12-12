@@ -16,7 +16,7 @@ const handle = nextApp.getRequestHandler();
 const app = express()
   .use(morgan('dev'))
   .use(
-    `/products/`,
+    [`/gists/`, `/products/`],
     createProxyMiddleware({
       target: 'https://takken.io',
       changeOrigin: true,
